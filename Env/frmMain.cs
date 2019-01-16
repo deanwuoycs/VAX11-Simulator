@@ -92,13 +92,13 @@ namespace VAX11Environment
 		private frmMemoryView				cntMemoryView = null;
 		private frmStackView				cntStackView = null;
 
-		private AgentObjects.IAgentCtlCharacter speaker;
+		//private AgentObjects.IAgentCtlCharacter speaker;
 		private DockingSuite.DockPanel dockPanelStack;
 		private DockingSuite.DockPanel dockPanelMemory;
 		private DockingSuite.DockControl dockControlStack;
 		private DockingSuite.DockControl dockControlMemory;
 		private DockingSuite.DockPanel dockPanelOutputTaskList;
-		private AxAgentObjects.AxAgent agent;
+		//private AxAgentObjects.AxAgent agent;
 		private System.Windows.Forms.OpenFileDialog openFileDialog1;
 		private DotNetWidgets.DotNetMenuProvider dotNetMenuProvider1;
 		private System.Windows.Forms.MainMenu mainMenu1;
@@ -282,7 +282,7 @@ namespace VAX11Environment
 			if (Settings.Environment.bLoadLastFileOnStartup && Settings.Environment.sLastFileLocation != "")
 				InterfaceDoOpen(Settings.Environment.sLastFileLocation);
 
-			StartAgent();
+			//StartAgent();
 
 			GiveFocusToTheActiveDocument();
 			InterfacePrepareEnvironment(enmEnvironmentMode.EditorMode);
@@ -374,7 +374,7 @@ namespace VAX11Environment
 			this.printDocument = new System.Drawing.Printing.PrintDocument();
 			this.imgListtoolBar = new System.Windows.Forms.ImageList(this.components);
 			this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-			this.agent = new AxAgentObjects.AxAgent();
+			//this.agent = new AxAgentObjects.AxAgent();
 			this.dockHostUp = new DockingSuite.DockHost();
 			this.dockPanel1 = new DockingSuite.DockPanel();
 			this.dockControlCalc = new DockingSuite.DockControl();
@@ -497,7 +497,7 @@ namespace VAX11Environment
 			this.tbButtonInOut = new DotNetWidgets.DotNetToolbarButtonItem();
 			((System.ComponentModel.ISupportInitialize)(this.sbpMessage)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.sbpCurrentLocation)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.agent)).BeginInit();
+			//((System.ComponentModel.ISupportInitialize)(this.agent)).BeginInit();
 			this.dockHostUp.SuspendLayout();
 			this.dockPanel1.SuspendLayout();
 			this.dockHostDown.SuspendLayout();
@@ -571,12 +571,12 @@ namespace VAX11Environment
 			// 
 			// agent
 			// 
-			this.agent.Enabled = true;
-			this.agent.Location = new System.Drawing.Point(0, 400);
-			this.agent.Name = "agent";
-			this.agent.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("agent.OcxState")));
-			this.agent.Size = new System.Drawing.Size(32, 32);
-			this.agent.TabIndex = 3;
+			//this.agent.Enabled = true;
+			//this.agent.Location = new System.Drawing.Point(0, 400);
+			//this.agent.Name = "agent";
+			//this.agent.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("agent.OcxState")));
+			//this.agent.Size = new System.Drawing.Size(32, 32);
+			//this.agent.TabIndex = 3;
 			// 
 			// dockHostUp
 			// 
@@ -1638,7 +1638,7 @@ namespace VAX11Environment
 			this.Controls.Add(this.dockHostLeft);
 			this.Controls.Add(this.dockHostRegisters);
 			this.Controls.Add(this.dockHostUp);
-			this.Controls.Add(this.agent);
+			//this.Controls.Add(this.agent);
 			this.Controls.Add(this.dotNetToolbar1);
 			this.Controls.Add(this.statusBar1);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1652,7 +1652,7 @@ namespace VAX11Environment
 			this.Load += new System.EventHandler(this.frmMain_Load);
 			((System.ComponentModel.ISupportInitialize)(this.sbpMessage)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.sbpCurrentLocation)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.agent)).EndInit();
+			//((System.ComponentModel.ISupportInitialize)(this.agent)).EndInit();
 			this.dockHostUp.ResumeLayout(false);
 			this.dockPanel1.ResumeLayout(false);
 			this.dockHostDown.ResumeLayout(false);
@@ -3439,42 +3439,42 @@ namespace VAX11Environment
 		/// <summary>
 		/// Starts an agent the welcome the user
 		/// </summary>
-		void StartAgent()
-		{
-			if (Settings.Environment.bShowAgentOnStartup)
-			{
-				agent.Characters.Load("Merlin","merlin.acs");
-				speaker=agent.Characters["Merlin"];
-				speaker.Left = 760;
-				speaker.Top = 350;
-				speaker.Show (0);
-				speaker.Speak("Welcome to VAX11 Simulator","");
-				speaker.Play("Greet");
-				System.Windows.Forms.Timer tmrAgent = new System.Windows.Forms.Timer();
-				tmrAgent.Tick += new EventHandler(killAgent);
-				tmrAgent.Interval = 5500;
-				tmrAgent.Enabled = true;
-			}
-		}
+//		void StartAgent()
+//		{
+//			if (Settings.Environment.bShowAgentOnStartup)
+//			{
+//				agent.Characters.Load("Merlin","merlin.acs");
+//				speaker=agent.Characters["Merlin"];
+//				speaker.Left = 760;
+//				speaker.Top = 350;
+//				speaker.Show (0);
+//				speaker.Speak("Welcome to VAX11 Simulator","");
+//				speaker.Play("Greet");
+//				System.Windows.Forms.Timer tmrAgent = new System.Windows.Forms.Timer();
+//				tmrAgent.Tick += new EventHandler(killAgent);
+//				tmrAgent.Interval = 5500;
+//				tmrAgent.Enabled = true;
+//			}
+//		}
 
 		/// <summary>
 		/// Kill the stupid agent that appear on the start
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
-		private void killAgent(object sender, System.EventArgs e)
-		{
-			if (speaker.Visible == true)
-			{
-				speaker.Hide(0);
-				((System.Windows.Forms.Timer)sender).Interval = 2000;
-			}
-			else
-			{
-				agent.Dispose();
-				((System.Windows.Forms.Timer)sender).Dispose();
-			}
-		}
+//		private void killAgent(object sender, System.EventArgs e)
+//		{
+//			if (speaker.Visible == true)
+//			{
+//				speaker.Hide(0);
+//				((System.Windows.Forms.Timer)sender).Interval = 2000;
+//			}
+//			else
+//			{
+//				agent.Dispose();
+//				((System.Windows.Forms.Timer)sender).Dispose();
+//			}
+//		}
 
 		#endregion
 

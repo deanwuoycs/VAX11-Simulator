@@ -3,3 +3,9 @@ M:\FirstYear\ICAR\vax11-simulator-ng\PropertyBagLib\bin\Debug\PropertyBagLib.pdb
 M:\FirstYear\ICAR\vax11-simulator-ng\PropertyBagLib\obj\Debug\PropertyBagLib.csprojResolveAssemblyReference.cache
 M:\FirstYear\ICAR\vax11-simulator-ng\PropertyBagLib\obj\Debug\PropertyBagLib.dll
 M:\FirstYear\ICAR\vax11-simulator-ng\PropertyBagLib\obj\Debug\PropertyBagLib.pdb
+D:\dean\Downloads\VAX11-Simulator-master\PropertyBagLib\bin\Debug\PropertyBagLib.dll
+D:\dean\Downloads\VAX11-Simulator-master\PropertyBagLib\bin\Debug\PropertyBagLib.pdb
+D:\dean\Downloads\VAX11-Simulator-master\PropertyBagLib\obj\Debug\PropertyBagLib.csprojResolveAssemblyReference.cache
+D:\dean\Downloads\VAX11-Simulator-master\PropertyBagLib\obj\Debug\PropertyBagLib.csproj.CoreCompileInputs.cache
+D:\dean\Downloads\VAX11-Simulator-master\PropertyBagLib\obj\Debug\PropertyBagLib.dll
+D:\dean\Downloads\VAX11-Simulator-master\PropertyBagLib\obj\Debug\PropertyBagLib.pdb

@@ -1,3 +1,10 @@
+New on 1.03.1:
+**************
+Bugs Fix:
+-----------
+41. Commented out references to defunct Microsoft Agent.
+
+
 New on 1.03:
 **************
 

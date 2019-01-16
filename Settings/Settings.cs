@@ -33,7 +33,7 @@ namespace VAX11Settings
 			public const string DAT_FILE_FILTERS = @"Text files (*.txt)|*.txt|All files (*.*)|*.*";
 			public const string MESSAGEBOXS_TITLE = "VAX11 Simulator";
 			public const string PRINTING_LOGO = "VAX11 Simulator by Nir Adar and Rotem Grosman";
-			public const string SIM_VERSION = "1.03";
+			public const string SIM_VERSION = "1.03.1";
 			public const string EditorFontName = "Courier New";
 			public const float EditorFontSize = 9.75F;
 

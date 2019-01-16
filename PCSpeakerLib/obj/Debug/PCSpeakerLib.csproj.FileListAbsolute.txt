@@ -3,3 +3,9 @@ M:\FirstYear\ICAR\vax11-simulator-ng\PCSpeakerLib\bin\Debug\PCSpeakerLib.pdb
 M:\FirstYear\ICAR\vax11-simulator-ng\PCSpeakerLib\obj\Debug\PCSpeakerLib.csprojResolveAssemblyReference.cache
 M:\FirstYear\ICAR\vax11-simulator-ng\PCSpeakerLib\obj\Debug\PCSpeakerLib.dll
 M:\FirstYear\ICAR\vax11-simulator-ng\PCSpeakerLib\obj\Debug\PCSpeakerLib.pdb
+D:\dean\Downloads\VAX11-Simulator-master\PCSpeakerLib\bin\Debug\PCSpeakerLib.dll
+D:\dean\Downloads\VAX11-Simulator-master\PCSpeakerLib\bin\Debug\PCSpeakerLib.pdb
+D:\dean\Downloads\VAX11-Simulator-master\PCSpeakerLib\obj\Debug\PCSpeakerLib.csprojResolveAssemblyReference.cache
+D:\dean\Downloads\VAX11-Simulator-master\PCSpeakerLib\obj\Debug\PCSpeakerLib.csproj.CoreCompileInputs.cache
+D:\dean\Downloads\VAX11-Simulator-master\PCSpeakerLib\obj\Debug\PCSpeakerLib.dll
+D:\dean\Downloads\VAX11-Simulator-master\PCSpeakerLib\obj\Debug\PCSpeakerLib.pdb
